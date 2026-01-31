@@ -1,0 +1,15 @@
+[project]
+name = "hr-smart-assistant"
+version = "0.1.0"
+description = "HR Smart Assistant using MCP"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.25.0",
+]
+
+[project.scripts]
+hr-server = "server:main"
+
+[tool.uv]
+managed = true
